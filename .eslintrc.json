@@ -1,0 +1,18 @@
+{
+  "extends": ["prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "env": {
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": "*.test.js",
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
